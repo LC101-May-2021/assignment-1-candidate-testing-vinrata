@@ -129,18 +129,18 @@ function gradeQuiz(candidateAnswers) {
       console.log(">>> Overall Grade: "+( ((grade)/5)*100 ) + "% ("+grade + " of 5 responses correct) <<<")
 
         if (grade >= 4){
-          console.log(">>> Status: PASS")
+          console.log(">>> Status: PASS <<<")
         }else{
-          console.log(">>> Status: FAIL")
+          console.log(">>> Status: FAIL <<<")
         }
 
       }else {
         console.log("Question 5 incorrect.")
       console.log(">>> Overall Grade: "+( ((grade)/5)*100 ) + "% ("+grade + " of 5 responses correct) <<<")   
         if (grade >= 4){
-          console.log(">>> Status: PASS")
+          console.log(">>> Status: PASS <<<")
         }else{
-          console.log(">>> Status: FAIL")
+          console.log(">>> Status: FAIL <<<")
         }           
       }
 }
