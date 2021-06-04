@@ -43,12 +43,31 @@ function gradeQuiz(candidateAnswers) {
    }
 
 
-  if (grade >= 4){
-    statusText = ">>> Status: PASS <<<";
-    }else{
-      statusText = ">>> Status: FAILED <<<";
-    }
- 
+ console.log(grade);
+ if (grade = 0){
+   grade = 0
+ }
+  if (grade = 1){
+   grade = 20
+ }
+  if (grade = 2){
+   grade = 40
+ }
+  if (grade = 3){
+   grade = 60
+ }
+  if (grade = 4){
+   grade = 80
+ }
+  if (grade = 5){
+   grade = 100
+ }
+ console.log(grade);
+    //statusText = ">>> Status: PASS <<<";
+    //}else{
+    //  statusText = ">>> Status: FAILED <<<";
+    //}
+      //(Number of Correct Answers) / (Number of Quiz Questions) * 100
       gradePercentage = ((grade)/(numOfQuizQuestions))*100;
 
       console.log(`>>> Overall Grade: ${gradePercentage}% (${grade} of ${numOfQuizQuestions} responses correct) <<<`);
@@ -58,7 +77,7 @@ function gradeQuiz(candidateAnswers) {
 }
 //>>> Overall Grade: 40% (2 of 5 responses correct) <<<
 
-//(Number of Correct Answers) / (Number of Quiz Questions) * 100
+
 function runProgram() {
   askForName();
   // TODO 1.1c: Ask for candidate's name //
