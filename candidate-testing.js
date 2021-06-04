@@ -41,23 +41,7 @@ function gradeQuiz(candidateAnswers) {
       if (candidateAnswers[i].toLowerCase() === correctAnswers[i].toLowerCase())
          grade++;
    }
-   /*
- if (candidateAnswers[0].toLowerCase() === correctAnswers[0].toLowerCase()){
-      grade ++;
-      }
- if (candidateAnswers[1].toLowerCase() === correctAnswers[1].toLowerCase()){
-      grade ++;
-      }
- if (candidateAnswers[2].toLowerCase() === correctAnswers[2].toLowerCase()){
-      grade ++;
-      }
- if (candidateAnswers[3].toLowerCase() === correctAnswers[3].toLowerCase()){
-      grade++;
-      }     
- if (candidateAnswers[4].toLowerCase() === correctAnswers[4].toLowerCase()){
-      grade++;
-      }
-*/
+
 
   if (grade >= 4){
     statusText = ">>> Status: PASS <<<";
