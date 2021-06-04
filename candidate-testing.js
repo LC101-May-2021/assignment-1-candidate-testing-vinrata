@@ -22,7 +22,14 @@ function askForName() {
 }
 function askQuestion() {
   // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer //
-  candidateAnswers[0] = input.question(questions[0]);
+     for (let i = 0; i < questions.length; i++) {
+      candidateAnswers[i] = input.question(questions[i])
+        console.log("Your Answer: "+ candidateAnswers[i])
+        console.log("Correct Answer: "+ correctAnswers[i])
+        console.log("\n")      
+   }
+}
+  /*candidateAnswers[0] = input.question(questions[0]);
     if (candidateAnswers[0].toLowerCase() === correctAnswers[0].toLowerCase()){
       console.log("Your Answer: "+ candidateAnswers[0])
       console.log("Correct Answer: "+ correctAnswers[0])
@@ -78,7 +85,7 @@ if (candidateAnswers[4].toLowerCase() === correctAnswers[4].toLowerCase()){
         console.log("\n")
       }
 }
-
+*/
 function gradeQuiz(candidateAnswers) {
 
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
