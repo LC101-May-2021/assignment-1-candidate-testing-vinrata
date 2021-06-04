@@ -27,12 +27,10 @@ function askQuestion() {
     if (candidateAnswers[0].toLowerCase() === correctAnswers[0].toLowerCase()){
       console.log("Your Answer: "+ candidateAnswers[0])
       console.log("Correct Answer: "+ correctAnswers[0])
-      console.log("Good Job!")
       console.log("\n")
       }else{
         console.log("Your Answer: "+ candidateAnswers[0])
         console.log("Correct Answer: "+ correctAnswers[0])
-        console.log("Wrong!")
         console.log("\n")
       }
     
@@ -40,12 +38,10 @@ function askQuestion() {
   if (candidateAnswers[1].toLowerCase() === correctAnswers[1].toLowerCase()){
       console.log("Your Answer: "+ candidateAnswers[1])
       console.log("Correct Answer: "+ correctAnswers[1])
-      console.log("Good Job!")
       console.log("\n")
       }else{
         console.log("Your Answer: "+ candidateAnswers[1])
         console.log("Correct Answer: "+ correctAnswers[1])
-        console.log("Wrong!")
         console.log("\n")
       }
 
@@ -53,12 +49,10 @@ function askQuestion() {
 if (candidateAnswers[2].toLowerCase() === correctAnswers[2].toLowerCase()){
       console.log("Your Answer: "+ candidateAnswers[2])
       console.log("Correct Answer: "+ correctAnswers[2])
-      console.log("Good Job!")
       console.log("\n")
       }else{
         console.log("Your Answer: "+ candidateAnswers[2])
         console.log("Correct Answer: "+ correctAnswers[2])
-        console.log("Wrong!")
         console.log("\n")
       }
 
@@ -66,12 +60,10 @@ if (candidateAnswers[2].toLowerCase() === correctAnswers[2].toLowerCase()){
 if (candidateAnswers[3].toLowerCase() === correctAnswers[3].toLowerCase()){
       console.log("Your Answer: "+ candidateAnswers[3])
       console.log("Correct Answer: "+ correctAnswers[3])
-      console.log("Good Job!")
       console.log("\n")
       }else{
         console.log("Your Answer: "+ candidateAnswers[3])
         console.log("Correct Answer: "+ correctAnswers[3])
-        console.log("Wrong!")
         console.log("\n")
       }
 
@@ -79,13 +71,11 @@ if (candidateAnswers[3].toLowerCase() === correctAnswers[3].toLowerCase()){
 if (candidateAnswers[4].toLowerCase() === correctAnswers[4].toLowerCase()){
       console.log("Your Answer: "+ candidateAnswers[4])
       console.log("Correct Answer: "+ correctAnswers[4])
-      console.log("Good Job!")
       console.log("\n")
 
       }else{
         console.log("Your Answer: "+ candidateAnswers[4])
         console.log("Correct Answer: "+ correctAnswers[4])
-        console.log("Wrong!")
         console.log("\n")
       }
 }
@@ -99,7 +89,6 @@ function gradeQuiz(candidateAnswers) {
       grade ++;
       console.log("Grading...")
       console.log("Question 1 correct.")
-
       }else {
         console.log("Grading...")
         console.log("Question 1 incorrect.")
@@ -112,15 +101,14 @@ function gradeQuiz(candidateAnswers) {
       }
  if (candidateAnswers[2].toLowerCase() === correctAnswers[2].toLowerCase()){
       grade ++;
-      console.log("Question 3 correct.")
 
+      console.log("Question 3 correct.")
       }else {
         console.log("Question 3 incorrect.")
       }
  if (candidateAnswers[3].toLowerCase() === correctAnswers[3].toLowerCase()){
       grade++;
       console.log("Question 4 correct.")
-
       }else {
         console.log("Question 4 incorrect.")
       }     
