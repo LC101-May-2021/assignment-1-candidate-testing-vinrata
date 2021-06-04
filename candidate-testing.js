@@ -94,6 +94,7 @@ function gradeQuiz(candidateAnswers) {
 
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
   let grade = 0;
+  let numOfQuizQuestions = 5;
  if (candidateAnswers[0].toLowerCase() === correctAnswers[0].toLowerCase()){
       grade ++;
       console.log("Grading...")
@@ -126,7 +127,7 @@ function gradeQuiz(candidateAnswers) {
  if (candidateAnswers[4].toLowerCase() === correctAnswers[4].toLowerCase()){
       grade++;
       console.log("Question 5 correct.")
-      console.log(">>> Overall Grade: "+( ((grade)/5)*100 ) + "% ("+grade + " of 5 responses correct) <<<")
+      console.log(">>> Overall Grade: "+( ((grade)/numOfQuizQuestions)*100 ) + "% ("+grade + " of 5 responses correct) <<<")
 
         if (grade >= 4){
           console.log(">>> Status: PASS <<<")
@@ -136,7 +137,7 @@ function gradeQuiz(candidateAnswers) {
 
       }else {
         console.log("Question 5 incorrect.")
-      console.log(">>> Overall Grade: "+( ((grade)/5)*100 ) + "% ("+grade + " of 5 responses correct) <<<")   
+      console.log(">>> Overall Grade: "+( ((grade)/numOfQuizQuestions)*100 ) + "% ("+grade + " of 5 responses correct) <<<")   
         if (grade >= 4){
           console.log(">>> Status: PASS <<<")
         }else{
@@ -144,6 +145,8 @@ function gradeQuiz(candidateAnswers) {
         }           
       }
 }
+
+//(Number of Correct Answers) / (Number of Quiz Questions) * 100
 
 
 
