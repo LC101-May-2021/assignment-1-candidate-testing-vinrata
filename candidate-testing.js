@@ -63,6 +63,7 @@ let oldGrade = grade;
    grade = 100
  }
  console.log(grade);
+ return grade;
     //statusText = ">>> Status: PASS <<<";
     //}else{
     //  statusText = ">>> Status: FAILED <<<";
