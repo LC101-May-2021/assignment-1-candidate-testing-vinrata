@@ -42,7 +42,7 @@ function gradeQuiz(candidateAnswers) {
          grade++;
    }
 
-
+let oldGrade = grade;
  console.log(grade);
  if (grade = 0){
    grade = 0
@@ -68,9 +68,9 @@ function gradeQuiz(candidateAnswers) {
     //  statusText = ">>> Status: FAILED <<<";
     //}
       //(Number of Correct Answers) / (Number of Quiz Questions) * 100
-      gradePercentage = ((grade)/(numOfQuizQuestions))*100;
+      gradePercentage = ((oldGrade)/(numOfQuizQuestions))*100;
 
-      console.log(`>>> Overall Grade: ${gradePercentage}% (${grade} of ${numOfQuizQuestions} responses correct) <<<`);
+      console.log(`>>> Overall Grade: ${gradePercentage}% (${oldGrade} of ${numOfQuizQuestions} responses correct) <<<`);
       console.log(statusText);
    
       
