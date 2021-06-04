@@ -131,7 +131,7 @@ function gradeQuiz(candidateAnswers) {
         if (grade >= 4){
           console.log(">>> Status: PASS <<<")
         }else{
-          console.log(">>> Status: FAIL <<<")
+          console.log(">>> Status: FAILED <<<")
         }
 
       }else {
@@ -140,7 +140,7 @@ function gradeQuiz(candidateAnswers) {
         if (grade >= 4){
           console.log(">>> Status: PASS <<<")
         }else{
-          console.log(">>> Status: FAIL <<<")
+          console.log(">>> Status: FAILED <<<")
         }           
       }
 }
