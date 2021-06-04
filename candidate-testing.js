@@ -29,63 +29,7 @@ function askQuestion() {
         console.log("\n")      
    }
 }
-  /*candidateAnswers[0] = input.question(questions[0]);
-    if (candidateAnswers[0].toLowerCase() === correctAnswers[0].toLowerCase()){
-      console.log("Your Answer: "+ candidateAnswers[0])
-      console.log("Correct Answer: "+ correctAnswers[0])
-      console.log("\n")
-      }else{
-        console.log("Your Answer: "+ candidateAnswers[0])
-        console.log("Correct Answer: "+ correctAnswers[0])
-        console.log("\n")
-      }
-    
-  candidateAnswers[1] = input.question(questions[1]);
-  if (candidateAnswers[1].toLowerCase() === correctAnswers[1].toLowerCase()){
-      console.log("Your Answer: "+ candidateAnswers[1])
-      console.log("Correct Answer: "+ correctAnswers[1])
-      console.log("\n")
-      }else{
-        console.log("Your Answer: "+ candidateAnswers[1])
-        console.log("Correct Answer: "+ correctAnswers[1])
-        console.log("\n")
-      }
-
-  candidateAnswers[2] = input.question(questions[2]);
-if (candidateAnswers[2].toLowerCase() === correctAnswers[2].toLowerCase()){
-      console.log("Your Answer: "+ candidateAnswers[2])
-      console.log("Correct Answer: "+ correctAnswers[2])
-      console.log("\n")
-      }else{
-        console.log("Your Answer: "+ candidateAnswers[2])
-        console.log("Correct Answer: "+ correctAnswers[2])
-        console.log("\n")
-      }
-
-  candidateAnswers[3] = input.question(questions[3]);
-if (candidateAnswers[3].toLowerCase() === correctAnswers[3].toLowerCase()){
-      console.log("Your Answer: "+ candidateAnswers[3])
-      console.log("Correct Answer: "+ correctAnswers[3])
-      console.log("\n")
-      }else{
-        console.log("Your Answer: "+ candidateAnswers[3])
-        console.log("Correct Answer: "+ correctAnswers[3])
-        console.log("\n")
-      }
-
-  candidateAnswers[4] = input.question(questions[4]);
-if (candidateAnswers[4].toLowerCase() === correctAnswers[4].toLowerCase()){
-      console.log("Your Answer: "+ candidateAnswers[4])
-      console.log("Correct Answer: "+ correctAnswers[4])
-      console.log("\n")
-
-      }else{
-        console.log("Your Answer: "+ candidateAnswers[4])
-        console.log("Correct Answer: "+ correctAnswers[4])
-        console.log("\n")
-      }
-}
-*/
+  
 function gradeQuiz(candidateAnswers) {
 
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
@@ -93,6 +37,11 @@ function gradeQuiz(candidateAnswers) {
   let numOfQuizQuestions = 5;
   let gradePercentage = 0;
   let statusText = "";
+  for (let i = 0; i < questions.length; i++) {
+      if (candidateAnswers[i].toLowerCase() === correctAnswers[i].toLowerCase())
+         grade++;
+   }
+   /*
  if (candidateAnswers[0].toLowerCase() === correctAnswers[0].toLowerCase()){
       grade ++;
       }
@@ -108,7 +57,7 @@ function gradeQuiz(candidateAnswers) {
  if (candidateAnswers[4].toLowerCase() === correctAnswers[4].toLowerCase()){
       grade++;
       }
-
+*/
 
   if (grade >= 4){
     statusText = ">>> Status: PASS <<<";
