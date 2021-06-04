@@ -85,7 +85,6 @@ function gradeQuiz(candidateAnswers) {
   let grade = 0;
   let numOfQuizQuestions = 5;
   let gradePercentage = 0;
-  let status = false;
   let statusText = "";
  if (candidateAnswers[0].toLowerCase() === correctAnswers[0].toLowerCase()){
       grade ++;
@@ -105,10 +104,8 @@ function gradeQuiz(candidateAnswers) {
 
 
   if (grade >= 4){
-    status = true;
     statusText = ">>> Status: PASS <<<";
     }else{
-      status = false;
       statusText = ">>> Status: FAILED <<<";
     }
  
