@@ -85,10 +85,11 @@ function gradeQuiz(candidateAnswers) {
   let grade = 0;
   let numOfQuizQuestions = 5;
   let gradePercentage = 0;
-
+  let status = false;
+  let statusText = "";
  if (candidateAnswers[0].toLowerCase() === correctAnswers[0].toLowerCase()){
       grade ++;
- }
+      }
  if (candidateAnswers[1].toLowerCase() === correctAnswers[1].toLowerCase()){
       grade ++;
       }
@@ -100,25 +101,23 @@ function gradeQuiz(candidateAnswers) {
       }     
  if (candidateAnswers[4].toLowerCase() === correctAnswers[4].toLowerCase()){
       grade++;
-      gradePercentage = ((grade)/(numOfQuizQuestions))*100;
-        if (grade >= 4){
-          console.log(`>>> Overall Grade: ${gradePercentage}% (${grade} of ${numOfQuizQuestions} responses correct) <<<`)
-
-          console.log(">>> Status: PASS <<<")
-        }else{
-          console.log(`>>> Overall Grade: ${gradePercentage}% (${grade} of ${numOfQuizQuestions} responses correct) <<<`)          
-          console.log(">>> Status: FAILED <<<")
-        }
-
-      }else {
-          console.log(`>>> Overall Grade: ${gradePercentage}% (${grade} of ${numOfQuizQuestions} responses correct) <<<`)
-        if (grade >= 4){
-          console.log(">>> Status: PASS <<<")
-        }else{
-          console.log(`>>> Overall Grade: ${gradePercentage}% (${grade} of ${numOfQuizQuestions} responses correct) <<<`)          
-          console.log(">>> Status: FAILED <<<")
-        }           
       }
+
+
+  if (grade >= 4){
+    status = true;
+    statusText = ">>> Status: PASS <<<";
+    }else{
+      status = false;
+      statusText = ">>> Status: FAILED <<<";
+    }
+ 
+      gradePercentage = ((grade)/(numOfQuizQuestions))*100;
+
+      console.log(`>>> Overall Grade: ${gradePercentage}% (${grade} of ${numOfQuizQuestions} responses correct) <<<`);
+      console.log(statusText);
+   
+      
 }
 //>>> Overall Grade: 40% (2 of 5 responses correct) <<<
 
