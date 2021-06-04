@@ -86,10 +86,8 @@ function gradeQuiz(candidateAnswers) {
   let numOfQuizQuestions = 5;
  if (candidateAnswers[0].toLowerCase() === correctAnswers[0].toLowerCase()){
       grade ++;
-      console.log("Grading...")
       console.log("Question 1 correct.")
       }else {
-        console.log("Grading...")
         console.log("Question 1 incorrect.")
       }
  if (candidateAnswers[1].toLowerCase() === correctAnswers[1].toLowerCase()){
