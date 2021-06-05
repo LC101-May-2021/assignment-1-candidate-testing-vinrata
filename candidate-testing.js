@@ -5,7 +5,6 @@ const input = require('readline-sync');
 // TODO 1.1a: Define candidateName // 
 let candidateName = " ";
 // TODO 1.2a: Define question, correctAnswer, and candidateAnswer //
-  let gradePercentage = 0;
 let question = 'Who was the first American woman in space? ';
 let correctAnswer = "Sally Ride";
 let candidateAnswer = " ";
@@ -40,15 +39,7 @@ let grade = 0;
       if (candidateAnswers[i].toLowerCase() === correctAnswers[i].toLowerCase())
          grade++;
    }
- //console.log(grade);
 
- //console.log(grade);
-    //statusText = ">>> Status: PASS <<<";
-    //}else{
-    //  statusText = ">>> Status: FAILED <<<";
-    //}
-      //(Number of Correct Answers) / (Number of Quiz Questions) * 100
-      gradePercentage = ((grade)/(5))*100;
 
       console.log(`>>> Overall Grade: ${(grade) / 5 * 100}% (${grade} of ${5} responses correct) <<<`);
       if (grade >= 4){
