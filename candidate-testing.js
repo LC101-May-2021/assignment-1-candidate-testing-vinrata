@@ -49,6 +49,7 @@ let grade = 0;
       }
    
       grade = grade / 5 * 100;
+      return grade;
 }
 //>>> Overall Grade: 40% (2 of 5 responses correct) <<<
 
