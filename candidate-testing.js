@@ -48,7 +48,7 @@ let grade = 0;
         console.log(`>>> Status: FAILED <<<`);
       }
    
-      
+      grade = grade / 5 * 100;
 }
 //>>> Overall Grade: 40% (2 of 5 responses correct) <<<
 
